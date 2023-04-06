@@ -15,5 +15,6 @@ namespace StudentAdminPortalAPI.Repositories
         Task<Student> AddStudent(Student request);
 
         Task<List<Gender>> GetGendersAsync();
+        Task<bool> UpdateProfileImage(Guid studentId, string profileImageUrl);
     }
 }
